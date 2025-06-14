@@ -1,0 +1,46 @@
+{
+  "name": "enhanced-todoist-mcp-server",
+  "version": "2.0.0",
+  "description": "Comprehensive Todoist MCP server with full API support",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "enhanced-todoist-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "test": "vitest",
+    "test-connection": "node scripts/test-connection.js",
+    "inspect": "npx @modelcontextprotocol/inspector build/index.js",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "todoist",
+    "task-management",
+    "productivity",
+    "claude",
+    "ai-assistant"
+  ],
+  "author": "Américo Dias",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/enhanced-todoist-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/enhanced-todoist-mcp-server/issues"
+  },
+  "homepage": "https://github.com/yourusername/enhanced-todoist-mcp-server#readme"
+}
